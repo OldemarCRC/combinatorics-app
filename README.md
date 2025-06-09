@@ -1,9 +1,9 @@
 # Combinatorics Calculator
 
-![GitHub License](https://img.shields.io/github/license/YOUR_GITHUB_USERNAME/combinatorics-app?style=for-the-badge)
+![GitHub License](https://img.shields.io/github/license/OldemarCRC/combinatorics-app?style=for-the-badge)
 ![Python Version](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Framework-Flask-black?style=for-the-badge&logo=flask)
-![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=for-the-badge&logo=render)
+![Deployed on Render](Rhttps://img.shields.io/badge/Deployed%20on-ender-46E3B7?style=for-the-badge&logo=render)
 
 Your go-to web tool for combinatorial calculations and a powerful API for integrating these functions into your own projects! This application helps you easily compute permutations, combinations, and inversions.
 
@@ -32,8 +32,7 @@ Your go-to web tool for combinatorial calculations and a powerful API for integr
 ## 🌐 Live Demo
 
 This application is deployed on Render! Access it live here:
-**[Link to your Render App](YOUR_RENDER_APP_URL_HERE)**
-*(Remember to replace `YOUR_RENDER_APP_URL_HERE` with the actual URL after deployment)*
+**[Link to your Render App](https://combinatorics-app-7e1w.onrender.com)**
 
 ---
 
@@ -70,10 +69,9 @@ To run this project on your local machine:
 
 1.  **Clone the Repository:**
     ```bash
-    git clone [https://github.com/YOUR_GITHUB_USERNAME/combinatorics-app.git](https://github.com/YOUR_GITHUB_USERNAME/combinatorics-app.git)
+    git clone [https://github.com/OldemarCRC/combinatorics-app.git](https://github.com/OldemarCRC/combinatorics-app.git)
     cd combinatorics-app
     ```
-    *(Remember to replace `YOUR_GITHUB_USERNAME` with your actual GitHub username)*
 
 2.  **Create a Virtual Environment (Recommended):**
     ```bash
