@@ -1,0 +1,30 @@
+# Directorios de entorno virtual
+.venv/
+venv/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de registro
+*.log
+
+# Archivos de configuración de entorno (variables sensibles)
+.env
+.flaskenv
+
+# Archivos específicos del sistema operativo
+.DS_Store # macOS
+Thumbs.db # Windows
+
+# Archivos y directorios de IDEs (ej. VS Code)
+.vscode/
+
+# Directorios de artefactos de construcción o temporales
+dist/
+build/
+
+# Documentos no relacionados directamente con el código fuente
+sugerencias de mejora de seguridad.docx

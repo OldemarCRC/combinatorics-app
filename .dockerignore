@@ -1,0 +1,19 @@
+.git/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.DS_Store
+*.log
+*.env
+sugerencias de mejora de seguridad.docx  # Excluye este archivo específico
+
+# Si usas algún IDE como VS Code
+.vscode/
+
+# Ignorar directorios de artefactos de construcción si los hubiera
+dist/
+build/

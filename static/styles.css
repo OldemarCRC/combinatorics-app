@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Degradado de fondo vibrante pero suave */
+    background: linear-gradient(135deg, #e0f7fa 0%, #f0f4f7 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    /* Sombra más pronunciada para un efecto flotante */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.header {
+    /* Degradado principal llamativo */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+
+.content {
+    padding: 40px;
+}
+
+.calculator-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.calc-section {
+    background: #ffffff;
+    /* Fondo blanco para las secciones de cálculo */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e0e0e0;
+    /* Borde gris suave */
+    transition: all 0.3s ease;
+}
+
+.calc-section:hover {
+    border-color: #6a11cb;
+    /* Borde al pasar el ratón: color principal */
+    transform: translateY(-2px);
+    /* Sombra más sutil y del color principal */
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.15);
+}
+
+.calc-section h3 {
+    color: #343a40;
+    /* Títulos en gris oscuro */
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e0e0e0;
+    /* Borde del input en gris suave */
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6a11cb;
+    /* Borde del input al enfocar: color principal */
+}
+
+.btn {
+    /* Degradado del botón, igual que el encabezado para consistencia */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    /* Sombra al pasar el ratón por el botón */
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+}
+
+.result-section {
+    /* Fondo para resultados: azul claro */
+    background: #e3f2fd;
+    /* Borde del color de resultado */
+    border: 2px solid #90caf9;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 20px;
+    display: none;
+}
+
+.result-section.show {
+    display: block;
+    animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result-section h4 {
+    color: #1976d2;
+    /* Título de resultado en azul */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.result-number {
+    font-size: 2em;
+    font-weight: bold;
+    color: #6a11cb;
+    /* Número de resultado en el color principal */
+    margin: 10px 0;
+    overflow-x: auto;
+    white-space: nowrap;
+    font-family: 'Courier New', Courier, monospace;
+    padding-bottom: 5px;
+}
+
+.formula {
+    background: #f8fafd;
+    /* Fondo para la fórmula, casi blanco */
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    color: #495057;
+    margin-top: 10px;
+}
+
+.error {
+    /* Colores de error más definidos y modernos */
+    background: #ffebee;
+    color: #d32f2f;
+    border: 2px solid #ef9a9a;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+.api-section {
+    /* Sección API en un tono cálido y contrastante */
+    background: #fff3e0;
+    border: 2px solid #ffcc80;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 30px;
+}
+
+.api-section h3 {
+    color: #e65100;
+    /* Título de API en naranja oscuro */
+    margin-bottom: 15px;
+}
+
+.api-endpoint {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    margin: 5px 0;
+    border: 1px solid #f57c00;
+    /* Borde de endpoint en naranja */
+    color: #343a40;
+    /* Texto del endpoint en gris oscuro */
+}
+
+.contact-footer {
+    /* Footer en tono oscuro para contraste y sofisticación */
+    background: #263238;
+    color: #eceff1;
+    margin-top: 50px;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 60px 40px 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.contact-section h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #eceff1;
+}
+
+.footer-subtitle {
+    color: #b0bec5;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+.contact-line {
+    width: 50px;
+    height: 3px;
+    background: #6a11cb;
+    /* Línea del color principal */
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #cfd8dc;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.email-link {
+    color: #eceff1;
+    font-size: 1.1em;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.email-link:hover {
+    color: #6a11cb;
+    /* Color principal al pasar el ratón */
+}
+
+.social-section {
+    text-align: center;
+}
+
+.social-section h3 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #eceff1;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: #37474f;
+    /* Fondo oscuro de los iconos sociales */
+    border-radius: 50%;
+    color: #cfd8dc;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: #6a11cb;
+    /* Color principal al pasar el ratón */
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(106, 17, 203, 0.3);
+}
+
+.social-link svg {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #37474f;
+    /* Borde del pie de página */
+    padding: 25px 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #90a4ae;
+    margin: 0;
+    font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+    .calculator-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding: 40px 20px 30px;
+        text-align: center;
+    }
+
+    .contact-section h3 {
+        font-size: 2em;
+    }
+
+    .social-section h3 {
+        font-size: 1.5em;
+    }
+
+    .footer-bottom {
+        padding: 20px;
+    }
+}
