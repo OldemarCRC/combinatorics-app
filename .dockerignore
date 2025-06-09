@@ -9,6 +9,7 @@ __pycache__/
 .DS_Store
 *.log
 *.env
+
 sugerencias de mejora de seguridad.docx  # Excluye este archivo específico
 
 # Si usas algún IDE como VS Code
