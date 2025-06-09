@@ -3,7 +3,7 @@
 ![GitHub License](https://img.shields.io/github/license/OldemarCRC/combinatorics-app?style=for-the-badge)
 ![Python Version](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Framework-Flask-black?style=for-the-badge&logo=flask)
-![Deployed on Render](Rhttps://img.shields.io/badge/Deployed%20on-ender-46E3B7?style=for-the-badge&logo=render)
+![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=for-the-badge&logo=render)
 
 Your go-to web tool for combinatorial calculations and a powerful API for integrating these functions into your own projects! This application helps you easily compute permutations, combinations, and inversions.
 
