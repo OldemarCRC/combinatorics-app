@@ -27,4 +27,7 @@ dist/
 build/
 
 # Documentos no relacionados directamente con el código fuente
-sugerencias de mejora de seguridad.docx
+sugerencias de mejora de seguridad.
+
+# ... (otras entradas) ...
+combinatorics_calculations.py

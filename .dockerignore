@@ -17,3 +17,6 @@ sugerencias de mejora de seguridad.docx  # Excluye este archivo específico
 # Ignorar directorios de artefactos de construcción si los hubiera
 dist/
 build/
+
+# ... (otras entradas) ...
+combinatorics_calculations.py
