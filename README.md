@@ -3,7 +3,6 @@
 ![GitHub License](https://img.shields.io/github/license/OldemarCRC/combinatorics-app?style=for-the-badge)
 ![Python Version](https://img.shields.io/badge/Python-3.11+-blue?style=for-the-badge&logo=python)
 ![Flask](https://img.shields.io/badge/Framework-Flask-black?style=for-the-badge&logo=flask)
-![Deployed on Render](https://img.shields.io/badge/Deployed%20on-Render-46E3B7?style=for-the-badge&logo=render)
 
 Your go-to web tool for combinatorial calculations and a powerful API for integrating these functions into your own projects! This application helps you easily compute permutations, combinations, and inversions.
 
@@ -15,7 +14,6 @@ Your go-to web tool for combinatorial calculations and a powerful API for integr
 * **Combinations (C(n,r)):** Determine the number of ways to choose 'r' items from a set of 'n' distinct items, without regard to the order of selection.
 * **Inversions:** Count the number of inversions in a given permutation sequence.
 * **User-Friendly Web Interface:** A clean and intuitive UI to perform calculations.
-* **API Endpoints:** Access the calculator's core functionality programmatically via dedicated REST API endpoints.
 
 ---
 
@@ -25,17 +23,8 @@ Your go-to web tool for combinatorial calculations and a powerful API for integr
 * **Frontend:** HTML, CSS, JavaScript
 * **Web Server:** Gunicorn
 * **Containerization:** Docker
-* **Deployment:** Render
 
 ---
-
-## 🌐 Live Demo
-
-This application is deployed on Render! Access it live here:
-**[Link to your Render App](https://combinatorics-app-7e1w.onrender.com)**
-
----
-
 ## 💻 How to Use
 
 ### Web Interface
@@ -46,21 +35,6 @@ This application is deployed on Render! Access it live here:
     * For **Inversions**: Enter a sequence of numbers separated by spaces (e.g., `3 1 4 2`).
 3.  **Calculate:** Click the "Calculate" or "Count Inversions" button.
 4.  **View Result:** The result, along with the relevant formula (for P & C), will be displayed. Any errors will be shown in red.
-
-### API Endpoints
-
-You can integrate this calculator's functionality into your own applications using the following API endpoints:
-
-* **Permutations:**
-    * **GET `/api/permutations/<n>/<r>`**
-    * **Example:** `GET /api/permutations/5/3`
-    * **Response:** `{"result": 60, "formula": "P(5,3)"}`
-
-* **Combinations:**
-    * **GET `/api/combinations/<n>/<r>`**
-    * **Example:** `GET /api/combinations/5/3`
-    * **Response:** `{"result": 10, "formula": "C(5,3)"}`
-
 ---
 
 ## ⚙️ Local Development Setup
